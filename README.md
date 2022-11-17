@@ -15,11 +15,13 @@ Thermocouple_Amp_Module with MAX31855K & STM32G030F6P6
  * アナログ出力はSTM32G030F6P6マイコンのPWM出力(16bit)からローパスフィルタとバッファを介して出力しています  
  * 電源電圧が5Vであってもアナログ出力範囲は0~3.3Vです  
  * アナログ出力範囲の上限及び下限ではオフセット電圧や飽和電圧の影響で温度精度が低下する場合があります  
+ * ファーム書き換えはSTLink及びSTM32CubeProgrammerが別途必要です  
  * 電源電圧：3.3V~5V  
  
-<img src="https://raw.githubusercontent.com/meerstern/Thermocouple_Amp_Module/master/IMG/img1.jpeg" width="360">
+<img src="https://github.com/meerstern/Thermocouple_Amp_Module/blob/main/IMG/img1.jpg" width="360">
    
-<img src="https://raw.githubusercontent.com/meerstern/Thermocouple_Amp_Module/master/IMG/img2.jpeg" width="360">
+<img src="https://github.com/meerstern/Thermocouple_Amp_Module/blob/main/IMG/img2.jpg" width="360">
  
- 
- [1]: https://www.maximintegrated.com/jp/products/interface/sensor-interface/MAX31855.html
+<img src="https://github.com/meerstern/Thermocouple_Amp_Module/blob/main/IMG/img3.jpg" width="360">
+
+[1]: https://www.maximintegrated.com/jp/products/interface/sensor-interface/MAX31855.html
