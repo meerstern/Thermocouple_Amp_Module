@@ -43,7 +43,7 @@
 //#define SETTING2
 //#define SETTING3
 
-#define AMP_OFFSET		0.013f
+#define AMP_OFFSET		0.000f
 
 
 
@@ -52,7 +52,8 @@
 	#define HGAIN		400.0f	 // 'C/V
 	#define VOFFSET 	1.25f	 // V/'C
 	#define MAXDUTY		4095.0f
-	#define MAXVOLT		3.3f
+	#define MINVOLT		0.001f
+	#define MAXVOLT		3.280f
 #endif
 
 #ifdef SETTING2
@@ -60,7 +61,8 @@
 	#define HGAIN		400.0f	 // 'C/V
 	#define VOFFSET 	0.5f	 // V/'C
 	#define MAXDUTY		4095.0f
-	#define MAXVOLT		3.3f
+	#define MINVOLT		0.001f
+	#define MAXVOLT		3.280f
 #endif
 
 #ifdef SETTING3
@@ -68,7 +70,8 @@
 	#define HGAIN		256.41f	 // 'C/V
 	#define VOFFSET 	0.0f	 // V/'C
 	#define MAXDUTY		4095.0f
-	#define MAXVOLT		3.3f
+	#define MINVOLT		0.001f
+	#define MAXVOLT		3.280f
 #endif
 
 #define USE_DEBUG
@@ -163,7 +166,7 @@ void ConvertTemp2Duty(float temp, uint8_t err, uint16_t *duty)
 	if(volt<0)
 		volt=0.0f;
 
-	dutyValue = volt/MAXVOLT*MAXDUTY;
+	dutyValue = volt/(MAXVOLT-MINVOLT)*MAXDUTY;
 
 	if(dutyValue>4095.0f)
 		dutyValue=MAXDUTY;
