@@ -21,6 +21,9 @@ Thermocouple_Amp_Module with MAX31855K & STM32G030F6P6
  * 電源電圧：3.3V~5V  
  * 基板サイズ25mm x35mm、M3x2 幅19mm  
  
+ ## 販売サイト
+  * [スイッチサイエンス][2]
+ 
 <img src="https://github.com/meerstern/Thermocouple_Amp_Module/blob/main/IMG/img1.jpg" width="360">
    
 <img src="https://github.com/meerstern/Thermocouple_Amp_Module/blob/main/IMG/img2.jpg" width="360">
@@ -28,3 +31,4 @@ Thermocouple_Amp_Module with MAX31855K & STM32G030F6P6
 <img src="https://github.com/meerstern/Thermocouple_Amp_Module/blob/main/IMG/img3.jpg" width="360">
 
 [1]: https://www.maximintegrated.com/jp/products/interface/sensor-interface/MAX31855.html
+[2]: https://www.switch-science.com/products/8651
